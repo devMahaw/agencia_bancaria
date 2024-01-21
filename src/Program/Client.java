@@ -40,7 +40,7 @@ public class Client {
     }
 
     public String toString() {
-        return "\nName: " + this.getName() +
+        return "\nNome: " + this.getName() +
                "\nCPF: " + this.getCpf() +
                "\nE-mail: " + this.getEmail();
     }
