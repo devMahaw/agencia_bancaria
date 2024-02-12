@@ -1,8 +1,8 @@
-package Program;
+package br.com.mdantas.Program;
 
 public class Client {
 
-    private static long counter = 1;
+    private static Long clientCounter = 1l;
 
     private String name;
     private String cpf;
@@ -12,7 +12,7 @@ public class Client {
         this.name = name;
         this.cpf = cpf;
         this.email = email;
-        counter += 1;
+        clientCounter += 1;
     }
 
     public java.lang.String getName() {
