@@ -49,4 +49,32 @@ public class Account {
                 "\nSaldo: " + Utils.doubleToString(this.getBalance()) +
                 "\n";
     }
+
+    public void deposit(Double value) {
+        if (value > 0) {
+            setBalance(getBalance() + value);
+            System.out.println("Seu depósito foi realizado com sucesso!");
+        } else {
+            System.out.println("Não foi possível realizar seu depósito.");
+        }
+    }
+
+    public void toWithdraw(Double value) {
+        if (value > 0 && this.getBalance() >= value) {
+            setBalance(getBalance() - value);
+            System.out.println("Seu saque foi realizado com sucesso!");
+        } else {
+            System.out.println("Não foi possível realizar seu saque.");
+        }
+    }
+
+    public void transfer(Account accountToTransfer, Double value) {
+        if (value > 0 && this.getBalance() >= value) {
+            setBalance(getBalance() - value);
+            accountToTransfer.balance = accountToTransfer.getBalance() + value;
+            System.out.println("Sua transferência foi realizada com sucesso!");
+        } else {
+            System.out.println("Não foi possível realizar sua transferência.");
+        }
+    }
 }
