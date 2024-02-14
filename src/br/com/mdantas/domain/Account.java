@@ -1,4 +1,4 @@
-package br.com.mdantas.Program;
+package br.com.mdantas.domain;
 
 import br.com.mdantas.utils.Utils;
 

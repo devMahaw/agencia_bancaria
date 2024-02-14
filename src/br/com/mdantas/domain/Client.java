@@ -1,4 +1,4 @@
-package br.com.mdantas.Program;
+package br.com.mdantas.domain;
 
 public class Client {
 
