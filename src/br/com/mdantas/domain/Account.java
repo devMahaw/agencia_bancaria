@@ -71,7 +71,7 @@ public class Account {
     public void transfer(Account accountToTransfer, Double value) {
         if (value > 0 && this.getBalance() >= value) {
             setBalance(getBalance() - value);
-            accountToTransfer.balance = accountToTransfer.getBalance() + value;
+            accountToTransfer.balance += value;
             System.out.println("Sua transferência foi realizada com sucesso!");
         } else {
             System.out.println("Não foi possível realizar sua transferência.");
